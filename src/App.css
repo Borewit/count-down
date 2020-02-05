@@ -14,13 +14,16 @@
 }
 
 .App-header {
+  background-image: url('./bomdisplay.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
 }
 
@@ -35,4 +38,26 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+@font-face {
+  font-family: 'digital-7-mono';
+  src: url('./fonts/digital-7 (mono).ttf');
+}
+
+@font-face {
+  font-family: 'digital-7';
+  src: url('./fonts/digital-7.ttf');
+}
+
+.digits {
+  font-family: 'digital-7-mono';
+  font-size: 20vw;
+  color: red;
+}
+
+.colon {
+  font-family: 'digital-7';
+  font-size: 20vw;
+  color: red;
 }

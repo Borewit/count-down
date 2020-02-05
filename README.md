@@ -1,3 +1,9 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/406b2b73-7e82-4724-b761-5af8fa8bdc0f/deploy-status)](https://app.netlify.com/sites/kaboom/deploys)
+
+### [:rocket: Show me](https://kaboom.netlify.com/)
+
+-------------------------------------------------------
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
