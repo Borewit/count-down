@@ -14,10 +14,8 @@
 }
 
 .App-header {
-  background-image: url('./bomdisplay.png');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 100%;
+  background-image: url('./black-leather-tile.jpg');
+  background-repeat: repeat;
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -60,4 +58,36 @@
   font-family: 'digital-7';
   font-size: 20vw;
   color: red;
+}
+
+.clock-display {
+  border-radius: 25px;
+  border: 2px solid #282c34;
+  background: black;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin: 20px;
+}
+
+.code-entry {
+  font-family: 'digital-7-mono';
+  font-size: 20vw;
+  color: greenyellow;
+  border-radius: 25px;
+  border: 2px solid #282c34;
+  background: black;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin: 20px;
+}
+
+.header {
+  margin: 20px;
+  padding-top: 0px;
+}
+
+.knoppen {
+  position: absolute;
+  right:20px;
+  width: 13%;
 }
