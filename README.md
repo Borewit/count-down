@@ -2,7 +2,7 @@
 
 # count-down
 
-[![Screen shot](https://i.imgur.com/OUgqD6d.jpg)](https://github.com/facebook/create-react-app)
+[![Screen shot](https://i.imgur.com/OUgqD6d.jpg)](https://kaboom.netlify.com/)
 
 ### [:rocket: Show me](https://kaboom.netlify.com/)
 
