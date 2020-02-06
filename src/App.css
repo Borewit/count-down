@@ -79,15 +79,21 @@
   padding-left: 30px;
   padding-right: 30px;
   margin: 20px;
+  width: 61%;
 }
 
 .header {
-  margin: 20px;
-  padding-top: 0px;
+  position: absolute;
+  top: 3%;
+}
+
+.header img {
+  width: 50vw;
 }
 
 .knoppen {
   position: absolute;
-  right:20px;
+  right: 2vw;
   width: 13%;
+  height: auto;
 }
