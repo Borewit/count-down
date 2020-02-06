@@ -1,27 +1,30 @@
 import React from 'react';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route
+} from "react-router-dom";
 
 // Resources
 import './App.css';
-import header from './header.webp';
-import knoppen from './buttons.webp';
 
 // Components
-import Clock from './Clock.js';
-import CodeEntry from './CodeEntry.js';
+import CountDownPage from './CountDownPage';
+import InitPage from "./InitPage";
 
 // Application
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <div className="header">
-          <img src={header} alt="COUNTDOWN TIMER KLOK"></img>
-        </div>
-        <Clock/>
-        <img className="knoppen" src={knoppen} alt="knoppen"></img>
-        <CodeEntry/>
-      </header>
-    </div>
+    <Router>
+      <Switch>
+        <Route path="/arm">
+          <CountDownPage/>
+        </Route>
+        <Route path="/">
+          <InitPage />
+        </Route>
+      </Switch>
+    </Router>
   );
 }
 

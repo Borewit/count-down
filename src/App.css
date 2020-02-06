@@ -71,7 +71,7 @@
 
 .code-entry {
   font-family: 'digital-7-mono';
-  font-size: 20vw;
+  font-size: 16vw;
   color: greenyellow;
   border-radius: 25px;
   border: 2px solid #282c34;
@@ -80,6 +80,7 @@
   padding-right: 30px;
   margin: 20px;
   width: 61%;
+  outline: 0;
 }
 
 .header {
