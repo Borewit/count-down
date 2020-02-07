@@ -1,4 +1,6 @@
 import React from "react";
+import sndExplosion from './explosion.mp3';
+import sndTick from './tick.mp3';
 
 export default class CountDown extends React.Component {
 
@@ -13,6 +15,8 @@ export default class CountDown extends React.Component {
       }
     };
     console.log(`CountDown: count-down=${this.props.countDown}`);
+    this.audioExplosion = new Audio(sndExplosion);
+    this.audioTick = new Audio(sndTick);
   }
 
   componentDidMount() {
@@ -27,7 +31,12 @@ export default class CountDown extends React.Component {
     const now = new Date().getTime();
     // const timeLeft = this.state.startTime + (this.props.countDown * 10000);
     if (!this.state.disarmed) {
-      const timeLeft = (this.state.startTime - now) / 1000 + this.props.countDown;
+      const timeLeft = Math.max(0, (this.state.startTime - now) / 1000 + this.props.countDown);
+      if (timeLeft === 0) {
+        clearInterval(this.timerID);
+        this.audioExplosion.play();
+      }
+      this.audioTick.play();
       this.setState({
         time: this.getTime(timeLeft)
       });
