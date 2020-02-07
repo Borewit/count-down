@@ -50,13 +50,13 @@
 
 .digits {
   font-family: 'digital-7-mono';
-  font-size: 26vh;
+  font-size: 26vmin;
   color: red;
 }
 
 .colon {
   font-family: 'digital-7';
-  font-size: 22vh;
+  font-size: 20vmin;
   color: red;
 }
 
