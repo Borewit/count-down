@@ -73,9 +73,9 @@ class TimeForm extends React.Component {
         <Form.Row>
           <InputGroup className="col col-6">
             <InputGroup.Prepend>
-              <InputGroup.Text id="inputGroup-sizing-lg">Code</InputGroup.Text>
+              <InputGroup.Text id="inputGroup-sizing-lg">Disarm code</InputGroup.Text>
             </InputGroup.Prepend>
-            <FormControl aria-label="Large" aria-describedby="inputGroup-sizing-sm" required defaultValue="stop"/>
+            <FormControl aria-label="Large" aria-describedby="inputGroup-sizing-sm" required defaultValue="stop" name="secret" onChange={this.changeHandler}/>
           </InputGroup>
         </Form.Row>
 
