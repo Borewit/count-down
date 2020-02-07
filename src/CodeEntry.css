@@ -1,0 +1,13 @@
+.code-entry {
+  font-family: 'digital-7-mono';
+  font-size: 16vw;
+  color: grey;
+  border-radius: 25px;
+  border: 2px solid #282c34;
+  background: black;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin: 20px;
+  width: 61%;
+  outline: 0;
+}

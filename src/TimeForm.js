@@ -65,7 +65,7 @@ class TimeForm extends React.Component {
             <InputGroup.Prepend>
               <InputGroup.Text id="inputGroup-sizing-lg">MM</InputGroup.Text>
             </InputGroup.Prepend>
-            <FormControl aria-label="Large" aria-describedby="inputGroup-sizing-sm" required type="number" ref="minutes"
+            <FormControl aria-label="Large" aria-describedby="inputGroup-sizing-sm" required type="number" name="minutes"
                          defaultValue="0" onChange={this.changeHandler}/>
           </InputGroup>
         </Form.Row>
